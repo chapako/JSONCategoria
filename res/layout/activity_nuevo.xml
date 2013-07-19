@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutNuevo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Nuevo" >
+
+    <TextView
+        android:id="@+id/txtNewCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="21dp"
+        android:text="Código" />
+
+    <EditText
+        android:id="@+id/editNewDescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNewDescrip"
+        android:layout_below="@+id/txtNewDescrip"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtNewDescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNewCod"
+        android:layout_below="@+id/editNewCod"
+        android:text="Descripción" />
+
+    <TextView
+        android:id="@+id/txtNewNomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNewDescrip"
+        android:layout_below="@+id/editNewDescrip"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/editNewNomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNewNomb"
+        android:layout_below="@+id/txtNewNomb"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editNewCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNewCod"
+        android:layout_below="@+id/txtNewCod"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
